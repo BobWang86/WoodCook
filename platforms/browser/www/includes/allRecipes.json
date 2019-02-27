@@ -1,0 +1,30 @@
+[
+  {
+    "name":"Teriyaki Chicken & Rice Bowl",
+    "tag":"Chicken",
+    "img":"images/Dinner-Chicken-Teriyaki-1.jpg",
+    "link":"recipe-dinner-01.html",
+    "bio":"A quick, simple and delicious mid-week dinner that��s packed full of flavour."
+  },
+  {
+    "name":"Spaghetti Bolognese",
+    "tag":"Beef",
+    "img":"images/Dinner-Spaghetti-Bolognese-1.jpg",
+    "link":"recipe-dinner-02.html",
+    "bio":"A delicious take on the traditional spaghetti bolognese with under 600 calories and over half of your five-a-day fruit and vegetables in one serving."
+  },
+  {
+    "name":"Lamb Fajitas",
+    "tag":"Lamb",
+    "img":"images/Dinner-Lamb-Fajita-1.jpg",
+    "link":"recipe-dinner-03.html",
+    "bio":"Switch to using lamb in your fajitas for a quick and tasty dinner. These lamb fajitas are oven baked, so they only need 10 minutes of your time and are ready in just half an hour."
+  },
+  {
+    "name":"One-Tray Baked Salmon",
+    "tag":"Fish",
+    "img":"images/Dinner-Baked-Salmon-1.jpg",
+    "link":"recipe-dinner-04.html",
+    "bio":"This one-tray baked salmon with summer vegetables makes a delicious dinner with only 5 minutes of prep and virtually no washing up."
+  }
+]

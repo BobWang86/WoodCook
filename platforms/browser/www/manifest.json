@@ -1,0 +1,22 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "WoodCook",
+  "short_name": "WoodCook",
+  "version": "com.proton.woodcook",
+  "description": "A simple Apache Cordova cooking application.",
+  "author": "WoodCook Team",
+  "icons": [
+    {
+      "src": "www/images/icons/woodcook-icon-3.png",
+      "type": "image/png",
+      "sizes": "100x100"
+    },
+    {
+      "src": "www/images/icons/woodcook-icon-3.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    }
+  ],
+  "start_url": "index.html"
+}

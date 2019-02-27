@@ -1,0 +1,23 @@
+{
+    "dinners": {      
+        "dinner_01":[
+            {"type":"chicken breasts", "amount":"300g"},
+
+            {"type":"broccoli", "amount":"500g"},
+
+            {"type":"brown rice", "amount":"300g"},
+
+            {"type":"frozen peas", "amount":"100g"},
+
+            {"type":"spring onions", "amount":"4"},
+
+            {"type":"teriyaki sauce", "amount":"4 tbsp"},
+
+            {"type":"sunflower oil", "amount":"4 tsp"}
+
+        ]
+    }
+}
+
+
+  

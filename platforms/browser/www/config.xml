@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.proton.woodcook" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>WoodCook</name>
+    <description>
+        A simple Apache Cordova cooking application.
+    </description>
+    <author email="able24@protonmail.com" href="http://cordova.io">
+        WoodCook Team
+    </author>
+    <content src="index.html" />
+    <icon height="100" platform="ios" src="www/images/icons/woodcook-icon-3.png" width="100" />
+    <icon density="mdpi" height="72" platform="android" src="www/images/icons/woodcook-icon-3.png" width="72" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+</widget>

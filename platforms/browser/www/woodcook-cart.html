@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shopping</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".remove").click(function(){
+        $(this).toggleClass("remove").toggleClass("recover").detach();
+        $("#removed").append(this);
+
+        $(".recover").click(function(){
+            $(this).toggleClass("recover").toggleClass("remove").detach();
+            $("#saved").append(this);
+        }); 
+    });
+});
+
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#saved, #removed").remove();
+    });
+});
+</script>
+
+<!-- <script type="text/javascript">
+$(document).ready(function () {
+    $.ajax({
+        type: 'GET',
+        url: 'includes/dinner_01.json',
+        crossDomain: true,
+        dataType: 'json',
+        success: jsonParser
+    });
+});
+
+function jsonParser(json) {        
+    $.getJSON('includes/dinner_01.json', function(data){
+        $.each(data.dinners.dinner_01, function(key, val){
+            var type = val.type;
+            var amount = val.amount;
+            $('#saved').append('<li class="flex-w flex-c-m bo-b-1 bocl15 p-tb-18"><span class="size-w-58 txt-m-122 cl3">' + type + '</span><span class="size-w-58 txt-m-122 cl3">' + amount + '</span></li>')
+        });
+    });
+}
+</script> -->
+<!--===============================================================================================-->
+</head>
+
+<body class="animsition">
+	<!-- Header -->
+    <header>
+        <!-- Header Mobile -->
+        <div class="wrap-header-mobile justify-content-between" style="height: 55px;">		
+            <!-- Icon header -->
+            <div class="icon-header-item flex-w flex-m"> <!--m-l-10-->
+                <a href="woodcook-guide.html"><img src="images/icons/icon-back-arrow.png" alt="IMG-LOGO"></a>
+            </div>
+
+            <span class="txt-m-103 cl6">Shopping</span>
+
+            <div class="icon-header-item flex-w flex-m">
+                <img src="images/icons/icon-share-01.png" alt="IMG-LOGO">
+            </div>
+        </div>        
+    </header>
+
+    <!-- Shopping List -->
+    <div class="size-w-20 flex-col-c-m m-rl-auto p-rl-15 p-t-80">
+        <div class="row">
+            <ul id="saved" class="col-sm-12 col-md-8 p-b-20" style="color: #333">
+                <li class="flex-w flex-m p-rl-20 bo-b-1 bocl15 p-tb-18 remove">
+                    <span class="size-w-58 txt-m-122">
+                        broccoli
+                    </span>
+
+                    <span class="size-w-59 txt-m-122">
+                        500g
+                    </span>
+                </li>
+
+                <li class="flex-w flex-m p-rl-20 bo-b-1 bocl15 p-tb-18 remove">
+                    <span class="size-w-58 txt-m-122">
+                        frozen peas
+                    </span>
+
+                    <span class="size-w-59 txt-m-122">
+                        100g
+                    </span>
+                </li>    
+                
+                <li class="flex-w flex-m p-rl-20 bo-b-1 bocl15 p-tb-18 remove">
+                    <span class="size-w-58 txt-m-122">
+                        spring onions
+                    </span>
+
+                    <span class="size-w-59 txt-m-122">
+                        4
+                    </span>
+                </li>  
+                
+                <li class="flex-w flex-m p-rl-20 bo-b-1 bocl15 p-tb-18 remove">
+                    <span class="size-w-58 txt-m-122">
+                        teriyaki sauce
+                    </span>
+
+                    <span class="size-w-59 txt-m-122">
+                        4 tbsp
+                    </span>
+                </li>
+                
+                <li class="flex-w flex-m p-rl-20 bo-b-1 bocl15 p-tb-18 remove">
+                    <span class="size-w-58 txt-m-122">
+                        sunflower oil
+                    </span>
+
+                    <span class="size-w-59 txt-m-122">
+                        4 tsp
+                    </span>
+                </li>  
+            </ul>
+
+            <ul id="removed" class="col-sm-12 col-md-8 p-b-20 " style="color: #777">
+                <li class="flex-w flex-m p-rl-20 bo-b-1 bocl15 p-tb-18 remove">
+                    <span class="size-w-58 txt-m-122">
+                        chicken breasts
+                    </span>
+
+                    <span class="size-w-59 txt-m-122">
+                        300g
+                    </span>
+                </li> 
+            </ul>
+        </div>
+
+        <button class="flex-c-m txt-s-105 cl0 bg10" style="position: fixed; bottom: 100px; width: 300px; height: 45px;">
+            Clear Shopping List
+        </button>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg12">
+        <div class="container">
+            <div class="flex-w flex-sb-m bo-t-1 bocl14 p-tb-10" style="position: fixed; z-index: 1000; width: 100%; bottom: 0;">
+                <span class="txt-s-101 cl9 p-tb-10 p-r-29">
+                    Copyright © 2018 WoodCook. All rights reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+	
+
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/slick/slick.min.js"></script>
+	<script src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/parallax100/parallax100.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/lightbox2/js/lightbox.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/sweetalert/sweetalert.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/moment.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="vendor/countdowntime/jquery.countdown.min.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+<!--===============================================================================================-->
+</body>
+</html>

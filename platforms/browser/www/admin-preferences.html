@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Preferences</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/linearicons-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/lightbox2/css/lightbox.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+
+<body class="animsition">
+	<!-- Header -->
+	<header>
+        <!-- Header Mobile -->
+        <div class="wrap-header-mobile" style="height: 55px;">		
+            <!-- Icon header -->
+            <div class="icon-header-item flex-w flex-m">
+                <a href="woodcook-admin.html"><img src="images/icons/icon-back-arrow.png" alt="IMG-LOGO"></a>
+            </div>
+
+            <span class="txt-m-103 cl6 flex-w flex-m">Settings</span>
+        </div>        
+    </header>
+    
+    <!-- Settings -->
+	<section class="bg12 p-t-120 p-b-5">
+        <div class="container">
+            <div class="size-a-1 flex-col-c-m p-b-5">
+                <div class="txt-center txt-m-201 cl3 how-pos1-parent m-b-55">
+                    Preferences
+                    <div class="how-pos1">
+                        <img src="images/icons/symbol-02.png" alt="IMG">
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-4 p-b-50">
+                    <div class="how-bor4 p-t-35 p-b-40 p-rl-30 m-t-5">
+                        <div class="flex-w flex-sb-m txt-m-103 cl6 bo-b-1 bocl15 p-b-20">
+                            <span>
+                                Options
+                            </span>
+                        </div>
+                        
+                        <!--  -->
+                        <div class="flex-w flex-sb-m txt-m-103 cl6 bo-b-1 bocl15 p-b-20 p-t-18">
+                            <span>I am a vegetarian</span>
+
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="flex-w flex-sb-m txt-m-103 cl6 bo-b-1 bocl15 p-b-20 p-t-18">
+                            <span>Send me notifications</span>
+
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="flex-w flex-sb-m txt-m-103 cl6 bo-b-1 bocl15 p-b-20 p-t-18">
+                            <span>Send anonymous data</span>
+
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="flex-w flex-sb-m txt-m-103 cl6 bo-b-1 bocl15 p-b-20 p-t-18">
+                            <span>Enable accessibility mode</span>
+
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+
+                        <div class="flex-w flex-sb-m txt-m-103 cl6 bo-b-1 bocl15 p-b-20 p-t-18">
+                            <span>Auto Play Videos</span>
+                        </div>
+
+                        <div class="bo-all-1 bocl15 p-b-25 m-b-30">
+                            <div class="flex-w flex-m bo-b-1 bocl15 p-rl-20 p-tb-16">
+                                <input class="m-r-15" id="radio1" type="radio" name="playVideo" value="wifi" checked="checked">
+                                <label class="txt-m-103 cl6" for="radio1">
+                                    On Wi-Fi Only
+                                </label>
+                            </div>
+
+                            <div class="flex-w flex-m p-rl-20 p-t-17 p-b-10">
+                                <input class="m-r-15" id="radio2" type="radio" name="playVideo" value="always">
+                                <label class="txt-m-103 cl6" for="radio2">
+                                    Always
+                                </label>
+                            </div>	
+                            
+                            <div class="flex-w flex-m p-rl-20 p-t-17 p-b-10">
+                                <input class="m-r-15" id="radio3" type="radio" name="playVideo" value="always">
+                                <label class="txt-m-103 cl6" for="radio3">
+                                    Never
+                                </label>
+                            </div>	
+                        </div>
+
+                        <button class="flex-c-m txt-m-113 cl0 bg10 size-a-21 hov-btn2 trans-04 p-rl-10">
+                            Save Changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+	<footer class="bg12">
+        <div class="container">
+            <div class="flex-w flex-sb-m bo-t-1 bocl14 p-tb-10">
+                <span class="txt-s-101 cl9 p-tb-10 p-r-29">
+                    Copyright © 2018 WoodCook. All rights reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/slick/slick.min.js"></script>
+	<script src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/parallax100/parallax100.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/lightbox2/js/lightbox.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/sweetalert/sweetalert.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<!--===============================================================================================-->
+    <script src="vendor/countdowntime/moment.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="vendor/countdowntime/jquery.countdown.min.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+[
+  {
+    "title":"Why some people overeat when they're upset.",
+    "author":"Laura Wilkinson Angela Rowe Charlotte Hardman",
+    "img":"images/article-title-1.jpeg",
+    "link":"article-page-01.html",
+    "bio":"This is what happens when emotions eat you up."
+  },
+  {
+    "title":"Myth: healthy food is more expensive than unhealthy food.",
+    "author":"Charlie Middleton",
+    "img":"images/article-title-2.jpeg",
+    "link":"article-page-02.html",
+    "bio":"Healthy food isn't just about organic food and so-called superfoods." 
+  },
+  {
+    "title":"Vegan diet: how your body changes from day one.",
+    "author":"Sophie Medlin",
+    "img":"images/article-title-3.jpeg",
+    "link":"article-page-03.html",
+    "bio":"How to have well-balanced vegan diets."
+  },
+  {
+    "title":"Low carb, Paleo or fasting – which diet is best?",
+    "author":"Duane Mellor Paul D McArdle",
+    "img":"images/article-title-4.jpeg",
+    "link":"article-page-04.html",
+    "bio":"Diets aren't just about losing weight. There are other things to consider."
+  }
+]
