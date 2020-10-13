@@ -607,8 +607,8 @@ Input, textarea : 14px/1.6 'Lato-Regular','Lato-Light', Arial, sans-serif;
 .icon-header-item {
   position: relative;
   cursor: pointer;
-  width: 38px;
-  height: 34px;
+  width: 40px;
+  height: auto;
 }
 
 
